@@ -12,86 +12,183 @@
 </head>
 
 <body class="container-fluid">
-    <div >
-        <div class="row d-flex justify-content-around mt-3">
+<main class="container-fluid" id="orderPage"><br>
+    <section class="card">
+        <p class="card-header">Home>Order</p>
+        <div class="card-body" style="background-color: #E9ECEF; width: 100%">
+            <div class="row ">
+                <div class="col-4">
+                    <div class="card border-secondary">
+                        <h3 class="card-header text-white" style="background-color:#008900">Customer Select</h3>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label class="form-label"> Order ID</label>
+                                        <input type="text" class="form-control" aria-describedby="emailHelp"
+                                               placeholder="O001">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label class="form-label"> Date</label>
+                                        <input type="date" class="form-control" aria-describedby="emailHelp">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label class="form-label"> Customer ID</label>
+                                        <select id="customerID" class="form-select">
+                                            <option>C001</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Name</label>
+                                        <input type="text" class="form-control" aria-describedby="emailHelp"
+                                               placeholder="Nimal">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label class="form-label"> Salary</label>
+                                        <input type="text" class="form-control" aria-describedby="emailHelp"
+                                               placeholder="75000.00">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Address</label>
+                                        <input type="text" class="form-control" aria-describedby="emailHelp"
+                                               placeholder="Colombo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="card border-secondary">
+                        <h3 class="card-header bg-secondary text-white">Item Select</h3>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label class="form-label"> Item ID</label>
+                                        <select id="itemID" class="form-select">
+                                            <option>I001</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Name</label>
+                                        <input type="text" class="form-control" aria-describedby="emailHelp"
+                                               placeholder="Samba 5kg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label class="form-label"> UnitPrice</label>
+                                        <input type="text" class="form-control" aria-describedby="emailHelp"
+                                               placeholder="450.00">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">QTY On Hand</label>
+                                        <input type="text" class="form-control" aria-describedby="emailHelp"
+                                               placeholder="50">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-8">
+                                    <div class="mb-3">
+                                        <label class="form-label">Order QTY</label>
+                                        <input type="text" class="form-control" aria-describedby="emailHelp"
+                                               placeholder="2">
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <button type="button" class="btn btn-warning small"
+                                            style="position: absolute;bottom: 2vw;right: 1vw">Add Item
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card border-warning">
+                        <div class="card-body">
+                            <div class="row">
+                                <h3 style="color: indianred">Net Total : 5000.00</h3>
+                            </div>
+                            <br>
 
-            <div class="card text-bg-warning mb-3 col-12 col-md-6 col-lg-4 bg-warning">
-                <div class="card-header">2023-04-26 </div>
-                <div class="card-body">
-                    <h5 class="card-title">Revenue</h5>
-                    <h2>Rs:20000.00</h2>
+
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="amountInput" class="form-label">Cash</label>
+                                    <input type="number" class="form-control" id="amountInput" placeholder="0.00">
+                                </div>
+                                <div class="col-6">
+                                    <label for="discountInput" class="form-label">Discount</label>
+                                    <input type="number" class="form-control" id="discountInput" placeholder="0.00">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row-10">
+                                <label for="balanceInput" class="form-label">Balance</label>
+                                <input type="number" class="form-control" id="balanceInput" placeholder="0.00">
+                            </div>
+                            <br>
+                            <div class="row-3">
+                                <button type="button" class="btn btn-success">Place Order</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <br>
+            <div class="row-12" style="width: 100%">
+                <table class="table table-bordered" style="border: 2px solid green">
+                    <thead style="background-color: #08A389">
+                    <tr>
+                        <th scope="col">Item Code</th>
+                        <th scope="col">Item Name</th>
+                        <th scope="col">UnitPrice</th>
+                        <th scope="col">QTY</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">Option</th>
+                    </tr>
+                    </thead>
+                    <tbody style="background-color: white">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>samba(1.0 kg)</td>
+                        <td>450.00</td>
+                        <td>2</td>
+                        <td>900.00</td>
+                        <td>
+                            <button type="button" class="btn btn-danger">Delete</button>
+                        </td>
+                    </tr>
 
-            <div class="card text-bg-success mb-3 col-12 col-md-6 col-lg-4 bg-light">
-                <div class="card-header">Orders</div>
-                <div class="card-body">
-                    <h5 class="card-title">Today Orders</h5>
-                    <h2>50</h2>
-                </div>
+                    </tbody>
+                </table>
             </div>
-
-            <div class="card text-white mb-3 col-12 col-md-6 col-lg-4" style="background-color: #5c636a">
-                <div class="card-header">Online</div>
-                <div class="card-body">
-                    <h5 class="card-title">Cashier</h5>
-                    <h2>Chathura Oshada</h2>
-                </div>
-            </div>
-
         </div>
-    </div>
-
-    <div class="row">
-        <div class="form-outline mb-4 mx-auto mt-5 col-4 align-items-end">
-            <input type="search" class="form-control" id="datatable-search-input" placeholder="Search Order">
-        </div>
-    </div>
-
-    <div class="row col-10 mx-auto table-hover" style="border: 2px solid green">
-        <table class="table">
-            <thead>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">Order ID</th>
-                <th scope="col">Customer</th>
-                <th scope="col">Date</th>
-                <th scope="col">Total (LKR)</th>
-                <th scope="col">Show Order</th>
-                <th scope="col">Options</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Ord-001</td>
-                <td>suwan</td>
-                <td>04.27.2023</td>
-                <td>127.99</td>
-                <td><div class="btn btn-success">view</div></td>
-                <td><div class="btn btn-danger">delete</div></td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Ord-002</td>
-                <td>kamal</td>
-                <td>04.28.2023</td>
-                <td>127.99</td>
-                <td><div class="btn btn-success">view</div></td>
-                <td><div class="btn btn-danger">delete</div></td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Ord-003</td>
-                <td>wihaga</td>
-                <td>04.29.2023</td>
-                <td>127.99</td>
-                <td><div class="btn btn-success">view</div></td>
-                <td><div class="btn btn-danger">delete</div></td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
+    </section>
+</main>
     <script src="../assets/bootstrap/js/bootstrap.bundle.js"></script>
 </body>
 
